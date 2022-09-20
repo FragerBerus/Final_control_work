@@ -11,3 +11,16 @@ for (int i = 0; i < lengthArray; i++)
     ArrayText[i] = Convert.ToString(Console.ReadLine());
     Console.Clear();
 }
+var ResultArrayText = Array.FindAll(ArrayText, word => word.Length <= 3);
+Console.Clear();
+Console.WriteLine($"Исходный массив из {lengthArray} элементов:");
+for (int i = 0; i < lengthArray; i++)
+{
+    Console.Write($"{ArrayText[i]}\t");
+}
+Console.WriteLine();
+System.Console.WriteLine($"Итоговый массив из {ResultArrayText.Length} элементов:");
+for (int i = 0; i < ResultArrayText.Length; i++)
+{
+    Console.Write($"{ResultArrayText[i]}\t");
+}
